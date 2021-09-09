@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Triangle Quiz</title>
+  </head>
+  <body>
+    <nav class="navigation container">
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link" href="/">Is Triangle?</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link link-active" href="/quiz.html">Quiz</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/hypotenuse.html">Check Hypotenuse</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/triangleArea.html">Triangle Area</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>Triangle Quiz?</h1>
+
+    <form class="form-quiz">
+      <div class="question-container">
+        <p>
+          1. What is the third angle for the triangle where angle1 = 45° and
+          angle2 = 45°?
+        </p>
+
+        <label> <input type="radio" name="question1" value="45°" />45° </label>
+        <label> <input type="radio" name="question1" value="60°" />60° </label>
+        <label> <input type="radio" name="question1" value="90°" />90° </label>
+      </div>
+      <div class="question-container">
+        <p>
+          2. What is the third angle for the triangle where angle1 = 45° and
+          angle2 = 45°?
+        </p>
+
+        <label>
+          <input type="radio" name="question2" value="obtuse" />obtuse
+        </label>
+        <label>
+          <input type="radio" name="question2" value="acute" />acute
+        </label>
+        <label>
+          <input type="radio" name="question2" value="right angled" />right
+          angled
+        </label>
+      </div>
+    </form>
+    <button id="triangle-quiz-btn">Submit Answers</button>
+    <div id="output"></div>
+    <footer class="footer">
+      <div class="footer-header">Connect With Me On</div>
+
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/athar05"> GitHub </a>
+        </li>
+        <li class="list-item-inline">
+          <a
+            class="link"
+            href="https://www.linkedin.com/in/athar-shakeel-a8544588/"
+          >
+            LinkedIn</a
+          >
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="https://instagram.com/atharo5"> Instagram</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

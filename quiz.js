@@ -1,16 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Is Triangle?</title>
-</head>
-<body>
+const quizForm = document.querySelector(".form-quiz");
+const submitButton = document.querySelector("#triangle-quiz-btn");
+const output = document.querySelector("#output");
 
-<h1>Is Triangle?</h1>
+correctAnswers = ["90°", "right angled"];
 
+function calculateScore() {
+  let score = 0;
+  let index = 0;
 
-<script src="isTriangle.js"></script>
-</body>
-</html>
+  const formResults = new FormData(quizForm);
+  for (let value of formResults.values()) {
+    if (value === correctAnswers[index]) {
+      score++;
+    }
+    index++;
+  }
+  output.innerText = `Your score is ${score}`;
+}
+
+submitButton.addEventListener("click", calculateScore);
